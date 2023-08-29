@@ -30,13 +30,13 @@ while running:
         # Keyboard input
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_LEFT:
-                dx = -5
+                dx = -1
             elif event.key == pygame.K_RIGHT:
-                dx = 5
+                dx = 1
             elif event.key == pygame.K_UP:
-                dy = -5
+                dy = -1
             elif event.key == pygame.K_DOWN:
-                dy = 5
+                dy = 1
         if event.type == pygame.KEYUP:
             if event.key == pygame.K_LEFT or event.key == pygame.K_RIGHT:
                 dx = 0
