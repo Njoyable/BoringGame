@@ -46,7 +46,11 @@ while running:
     # Update square position
     x += dx
     y += dy
-
+   
+    # Bound checking to keep the square within the screen
+    x = max(0, min(x, WIDTH - SQUARE_SIZE))
+    y = max(0, min(y, HEIGHT - SQUARE_SIZE))
+    
     # Clear the screen
     screen.fill(BACKGROUND_COLOR)
 
